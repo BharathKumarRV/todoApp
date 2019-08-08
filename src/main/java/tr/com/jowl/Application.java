@@ -8,6 +8,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.thymeleaf.extras.java8time.dialect.Java8TimeDialect;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 
 /**
  * The TodoBoot Project Main Application class
@@ -17,6 +19,7 @@ import org.thymeleaf.extras.java8time.dialect.Java8TimeDialect;
  * Date 4/27/2018.
  */
 @Configuration
+@ComponentScan(basePackages = {"tr.com"})
 @SpringBootApplication
 public class Application implements WebMvcConfigurer {
 
