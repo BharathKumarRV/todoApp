@@ -16,8 +16,7 @@ import org.thymeleaf.extras.java8time.dialect.Java8TimeDialect;
  * @version 1.0
  * Date 4/27/2018.
  */
-
-@ComponentScan(basePackages = {"tr.com"})
+@Configuration
 @SpringBootApplication
 public class Application implements WebMvcConfigurer {
 
